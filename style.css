@@ -16,10 +16,9 @@ body {
 }
 
 .main-content {
-  flex: 1;
   display: grid;
   grid-template-columns: 1fr 50px;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 50px 50px;
   gap: 10px;
 }
 
@@ -31,7 +30,7 @@ body {
   font-size: 24px;
 }
 
-.books {
+.book-line {
   grid-column: 1 / -1;
   font-size: 32px;
 }
@@ -57,4 +56,19 @@ button {
 
 button:hover {
   background-color: rgba(47, 0, 255, 0.5);
+}
+
+.books {
+  min-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 30px 100px;
+  grid-auto-rows: 50px;
+  gap: 10px;
+  flex: 1;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
