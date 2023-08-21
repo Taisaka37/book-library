@@ -14,12 +14,43 @@
     <button id="button">+</button>
     <div class="book-line">Books: </div>
   </div>
-  <div class="books">
+  <div class="books" id="books">
+    <!-- <div class="center">Atomic Habits</div>
+    <div class="center">James Clear</div>
+    <div class="center">257</div>
+    <div class="center">Reading</div>
+    <button id="button">-</button>
     <div class="center">Atomic Habits</div>
     <div class="center">James Clear</div>
     <div class="center">257</div>
     <div class="center">Reading</div>
+    <button id="button">-</button>
+    <div class="center">Atomic Habits</div>
+    <div class="center">James Clear</div>
+    <div class="center">257</div>
+    <div class="center">Reading</div>
+    <button id="button">-</button> -->
   </div>
+    <form action="" method="get" class="form" id="form">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" placeholder="Atomic Habits" required>
+      </div>
+      <div>
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" placeholder="James Clear" required>
+      </div>
+      <div>
+        <label for="pages">Pages</label>
+        <input type="number" name="pages" id="pages" placeholder="300" min="1">
+      </div>
+      <div>
+        <label for="read">Read</label>
+        <input type="checkbox" name="read" id="read">
+      </div>
+      <button type="submit" id="submit">Submit</button>
+      <button type="reset" id="cancel">Cancel</button>
+    </form>
   <div class="footer">Made by Taisaka <3</div>
 
   
